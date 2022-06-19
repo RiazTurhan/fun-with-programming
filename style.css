@@ -1,0 +1,43 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(243, 243, 243);
+    background-color: rgb(14, 10, 9);
+    transition: width 2s, transform .30s;
+    display: inline-block;
+}
+.box:hover{
+    width: 200px;
+    transform: rotate(180deg);
+}
+
+.cricket{
+    border: 1px solid black;
+}
+
+.bat{
+    margin-bottom: 20px;
+    width: 200px;
+    transform: 5s ease-in;
+    
+}
+.cricket:hover .bat{
+    transform: rotate(-50deg);
+    transform-origin: top;
+}
+
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 290px;
+    bottom: 200px;
+    transition: transform 1s ease-out;
+    
+}
+
+.cricket:hover .ball{
+    transform: translate(800px);
+}
