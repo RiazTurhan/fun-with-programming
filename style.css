@@ -70,3 +70,50 @@ p{
     color:rgb(185, 12, 12); ;
 }
 
+
+
+.ball-bounsing{
+    width: 500px;
+    height: 300px;
+    background-color: lightblue;
+}
+.ball-2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(185, 12, 12);
+    animation: sliding 1s ease-in-out 0.5s infinite alternate ;
+    animation-play-state: running;
+    position: relative;
+    top: 100px;
+}
+@keyframes sliding{
+    from {
+        background-color: lightgreen;
+        left: 0;
+    }
+    to {
+        background-color: violet;
+        left: 400px;
+    }
+    25%{
+        top: 0;
+    }
+    50%{
+        top: 100%;
+    }
+    75%{
+        top: 0;
+    }
+}
+
+.line-1, .line-2{
+    width: 5px;
+    height: 100px;
+    background-color: red;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
